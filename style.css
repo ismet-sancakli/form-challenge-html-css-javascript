@@ -1,48 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap");
 
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
 *,
 * :before,
 * :after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   background: url("./images/bg-intro-desktop.png") no-repeat;
   background-color: hsl(0, 100%, 74%);
   background-position: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 30px;
+  grid-gap: 40px;
   width: 100%;
   max-width: 1300px;
-  margin: 5%;
+  margin: 5% auto;
 }
 
 .text-container {
   color: white;
-  margin-left: 11%;
-  margin-top: 5%;
+  margin-left: 5% auto;
 }
 
 h1 {
   color: white;
   font-size: 50px;
   font-weight: 700;
+  font-family: inherit;
   padding-top: 18%;
 }
 
 p {
   color: white;
-  font-size: 1rem;
+  font-size: 16px;
+  font-family: inherit;
   font-weight: 500;
 }
 
@@ -59,6 +57,7 @@ button {
   border-radius: 10px;
   color: white;
   font-size: 16px;
+  font-family: inherit;
   font-weight: 400;
 }
 
@@ -82,7 +81,10 @@ form {
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 5px;
   width: 100%;
-  cursor: text;
+
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 500;
 }
 
 .field:focus {
@@ -94,7 +96,7 @@ form {
 ::placeholder {
   color: black;
   opacity: 0.95;
-  font-size: 16px;
+  font-size: inherit;
 }
 
 .errormessage {
@@ -112,7 +114,8 @@ form {
   background-color: hsl(154, 59%, 51%);
   font-size: 16px;
   font-weight: 600;
-  border-radius: 4px;
+  font-family: inherit;
+  border-radius: 5px;
   text-transform: uppercase;
   width: 100%;
   margin-top: 25px;
