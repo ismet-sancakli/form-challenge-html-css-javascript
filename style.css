@@ -76,13 +76,12 @@ form {
 
 .field {
   display: inline-block;
-  margin: 17px auto;
+  margin: 17px auto 0;
   padding: 15px 20px;
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 5px;
   width: 100%;
-
-  font-size: 16px;
+  font-size: 14px;
   font-family: inherit;
   font-weight: 500;
 }
@@ -94,19 +93,27 @@ form {
 }
 
 ::placeholder {
-  color: black;
-  opacity: 0.95;
+  color: hsl(62, 60, 73);
+  font-weight: 600;
   font-size: inherit;
 }
 
 .errormessage {
   margin: 0;
-  padding-bottom: 7px;
+  padding-bottom: 0px;
   color: hsl(0, 100%, 74%);
   text-align: right;
   font-size: 12px;
   font-style: italic;
+  background: url("./images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-size: 1.5rem 1.5rem;
+  background-position: 95% center;
   display: none;
+}
+
+.was-validated .field:invalid + .errormessage {
+  display: block;
 }
 
 .claimbutton {
