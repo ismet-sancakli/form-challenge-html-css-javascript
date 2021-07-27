@@ -105,11 +105,14 @@ form {
   text-align: right;
   font-size: 12px;
   font-style: italic;
-  background: url("./images/icon-error.svg");
-  background-repeat: no-repeat;
-  background-size: 1.5rem 1.5rem;
-  background-position: 95% center;
   display: none;
+}
+
+.was-validated .field:invalid {
+  background: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  border: 2px solid hsl(0, 100%, 74%);
 }
 
 .was-validated .field:invalid + .errormessage {
